@@ -1,37 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>TailwindCSS</title>
-  </head>
-  <body>
-    <!-- Positioning -->
 
-    <!-- Top left corner -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>TailwindCSS</title>
+</head>
 
-    <!-- Top right corner -->
+<body>
+  <!-- Positioning -->
+  <div class="relative w-1/2 h-12 bg-red-200 ">
+    <p>Parent element</p>
+    <div class="absolute bottom-0 right-0 bg-pink-900 text-white">
+      <p>Absolute element</p>
+    </div>
+  </div>
+  <!-- Top left corner -->
+  <div class="relative h-32 bg-yellow-100">
+    <div class="absolute left-0 top-0 h-16 w-16 bg-yellow-900">Absolute</div>
+  </div>
+  <!-- Top right corner -->
+  <div class="relative h-32 bg-yellow-100">
+    <div class="absolute right-0 top-0 h-16 w-16 bg-yellow-900">Absolute</div>
+  </div>
+  <!-- Bottom left corner -->
+  <div class="relative h-32 bg-yellow-100">
+    <div class="absolute left-0 bottom-0 h-16 w-16 bg-yellow-900">Absolute</div>
+  </div>
+  <!-- Bottom right corner -->
 
-    <!-- Bottom left corner -->
+  <!-- Span top edge -->
+  <br>
+  <div class="relative h-32 bg-yellow-100">
+    <div class="absolute inset-x-0 top-0 h-16  bg-yellow-900">Absolute</div>
+  </div>
+  <!-- Span left edge -->
+  <br>
+  <div class="relative h-32 bg-yellow-100">
+    <div class="absolute inset-y-0 top-0  w-16 bg-yellow-900">Absolute</div>
+  </div>
+  <!-- Span right edge -->
+  <br>
+  <div class="relative h-32 bg-yellow-100">
+    <div class="absolute inset-y-0 top-0 right-0 w-16 bg-yellow-900">Absolute</div>
+  </div>
+  <!-- Span bottom edge -->
+  <br>
+  <div class="relative h-32 bg-yellow-100">
+    <div class="absolute inset-x-0 bottom-0 h-16  bg-yellow-900">Absolute</div>
+  </div>
+  <!-- Display Classes -->
+  <div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero numquam fugiat labore corrupti nam doloribus
+    officia asperiores illum voluptatum inventore, <span class="inline text-pink-500">This is Inline </span>aspernatur
+    repellendus
+    itaque ab et commodi nihil esse ullam!
+    Deserunt nostrum<span class="inline-block text-pink-500">Class inline block</span> minima amet consequuntur hic
+    voluptatibus
+    laborum adipisci, <span class="block text-pink-500">This is block</span>in harum deleniti magnam dolor veniam
+    expedita rerum eligendi <span class="hidden text-pink-500">This is hiudden</span>quibusdam omnis cumque reiciendis
+    labore
+    dignissimos architecto nulla sint, molestiae
+    quisquam. Perferendis.
+  </div>
+  <!-- Z-Index -->
 
-    <!-- Bottom right corner -->
+  <!-- Floats -->
+  <br>
+  <div class="w-1/2">
+    <img class="h-48 w-48 float-right" src="../assets/img/img1.jpg" />
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dolore libero cum autem explicabo porro nam,
+      eaque inventore! Nobis nesciunt obcaecati aliquam neque deleniti error deserunt est facilis maxime voluptate.</p>
+  </div>
+</body>
 
-    <!-- Span top edge -->
-
-    <!-- Span left edge -->
-
-    <!-- Span right edge -->
-
-    <!-- Span bottom edge -->
-
-    <!-- Display Classes -->
-
-    <!-- Z-Index -->
-
-    <!-- Floats -->
-  </body>
 </html>
 
 <!-- Position Classes
